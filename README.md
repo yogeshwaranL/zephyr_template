@@ -138,6 +138,7 @@ Comprehensive guides available in the `docs/` directory:
 
 - **[Getting Started](docs/GETTING_STARTED.md)** - Complete setup and installation guide
 - **[Building Applications](docs/BUILDING.md)** - Build system, configuration, and debugging
+- **[Workspace Topologies](docs/WORKSPACE_TOPOLOGIES.md)** - Visual guide to T1, T2, T3 and manifest repositories
 - **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
 
 ## Application Structure
