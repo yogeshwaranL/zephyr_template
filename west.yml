@@ -1,13 +1,13 @@
-# Zephyr T3 Forest Template - West Manifest
-# This file defines the workspace structure and manages external dependencies
-# including the Zephyr RTOS and its modules.
+# Zephyr T2 Freestanding Application Template - West Manifest
+# This file defines the application workspace where this repository
+# is the manifest repository and brings in Zephyr as a dependency.
 
 manifest:
   version: "0.13"
 
-  # Define the west workspace root (this repository)
+  # This repository is the manifest repository (application-centric)
   self:
-    path: workspace
+    path: .
 
   # Remote repositories
   remotes:
@@ -18,7 +18,9 @@ manifest:
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
-      revision: main
+      # Pin to specific version for reproducible builds
+      # Change to 'main' for latest, or specific tag like 'v3.7.0'
+      revision: v3.7.0
       import:
         # Import Zephyr's own west manifest which includes HALs, modules, etc.
         name-allowlist:
