@@ -1,6 +1,6 @@
-# Getting Started with Zephyr T3 Forest Template
+# Getting Started with Zephyr T2 Freestanding Template
 
-This guide will walk you through setting up your development environment and building your first Zephyr application using the T3 forest template.
+This guide will walk you through setting up your development environment and building your first Zephyr application using the T2 freestanding template.
 
 ## Table of Contents
 
@@ -265,7 +265,7 @@ You should see output similar to:
 
 ```
 *** Booting Zephyr OS build v3.x.x ***
-[00:00:00.000,000] <inf> main: Zephyr T3 Forest Template Application Started!
+[00:00:00.000,000] <inf> main: Zephyr T2 Freestanding Application Started!
 [00:00:00.000,000] <inf> main: Board: qemu_cortex_m3
 [00:00:00.000,000] <inf> main: Zephyr version: 3.x.x
 [00:00:00.000,000] <inf> main: Hello World! Count: 0

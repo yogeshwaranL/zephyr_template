@@ -10,7 +10,7 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
 int main(void)
 {
-	LOG_INF("Zephyr T3 Forest Template Application Started!");
+	LOG_INF("Zephyr T2 Freestanding Application Started!");
 	LOG_INF("Board: %s", CONFIG_BOARD);
 	LOG_INF("Zephyr version: %s", KERNEL_VERSION_STRING);
 

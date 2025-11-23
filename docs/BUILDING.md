@@ -1,6 +1,6 @@
 # Building Applications
 
-This guide covers everything you need to know about building, configuring, and debugging Zephyr applications in the T3 forest template.
+This guide covers everything you need to know about building, configuring, and debugging Zephyr applications in the T2 freestanding template.
 
 ## Table of Contents
 

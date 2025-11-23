@@ -1,6 +1,8 @@
 # Adding Projects and Modules
 
-This guide explains how to add new applications, custom modules, and external dependencies to your T3 forest workspace.
+This guide explains how to add new applications, custom modules, and external dependencies to your T2 freestanding application.
+
+**Note:** T2 is designed for single-application projects. For managing multiple applications, consider using the T3 Forest topology instead.
 
 ## Table of Contents
 

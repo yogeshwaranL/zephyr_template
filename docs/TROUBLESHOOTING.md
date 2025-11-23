@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-Common issues and solutions for Zephyr T3 Forest Template development.
+Common issues and solutions for Zephyr T2 Freestanding Application Template development.
 
 ## Table of Contents
 
