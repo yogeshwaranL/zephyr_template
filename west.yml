@@ -1,0 +1,47 @@
+# Zephyr T3 Forest Template - West Manifest
+# This file defines the workspace structure and manages external dependencies
+# including the Zephyr RTOS and its modules.
+
+manifest:
+  version: "0.13"
+
+  # Define the west workspace root (this repository)
+  self:
+    path: workspace
+
+  # Remote repositories
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  # Projects to fetch and manage
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import:
+        # Import Zephyr's own west manifest which includes HALs, modules, etc.
+        name-allowlist:
+          - cmsis
+          - hal_atmel
+          - hal_espressif
+          - hal_nordic
+          - hal_nxp
+          - hal_st
+          - hal_stm32
+          - hal_ti
+          - mbedtls
+          - mcuboot
+          - picolibc
+          - segger
+          - tinycrypt
+          - trusted-firmware-m
+          - tf-m-tests
+          - psa-arch-tests
+
+    # Add more projects here as needed
+    # Example:
+    # - name: my-custom-module
+    #   url: https://github.com/myorg/my-custom-module
+    #   revision: main
+    #   path: modules/my-custom-module

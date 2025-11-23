@@ -1,0 +1,137 @@
+# Zephyr T3 Forest Template - Git Ignore File
+
+# Build directories
+build/
+build-*/
+cmake-build-*/
+
+# Zephyr and dependencies (managed by west)
+zephyr/
+modules/
+tools/
+bootloader/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Compiled Object files
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+
+# Dependencies
+*.d
+
+# Archives
+*.a
+*.lib
+
+# Shared objects
+*.dll
+*.so
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
+
+# West
+.west/config
+
+# Tags and database files
+tags
+TAGS
+.tags
+cscope.out
+cscope.files
+
+# Configuration backup files
+*.conf.old
+*.overlay.old
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Core dumps
+core
+*.core
+
+# Documentation build output
+_build/
+*.pdf
+*.html
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+*.coverage
+
+# Environment variables
+.env
+.env.local
+
+# Debugging
+.gdbinit
+*.gdb
+
+# Package files
+*.tar.gz
+*.zip
+*.7z
+
+# Specific Zephyr artifacts
+.config
+.config.old
+zephyr.dts
+zephyr.dts.pre
+*.pre.tmp
+
+# JLink
+JLink.log
+
+# OpenOCD
+openocd.log
+
+# SDK and toolchains (if stored locally - not recommended)
+sdk/
+toolchain/

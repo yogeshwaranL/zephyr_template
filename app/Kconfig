@@ -1,0 +1,29 @@
+# Application Kconfig
+
+mainmenu "Zephyr Application Configuration"
+
+# Source Zephyr's Kconfig
+source "Kconfig.zephyr"
+
+# Add application-specific Kconfig options below
+menu "Application Configuration"
+
+config APP_CUSTOM_OPTION
+	bool "Enable custom application option"
+	default n
+	help
+	  This is an example custom configuration option.
+	  Enable this to activate custom application features.
+
+if APP_CUSTOM_OPTION
+
+config APP_CUSTOM_VALUE
+	int "Custom value"
+	default 42
+	range 0 100
+	help
+	  Example integer configuration value.
+
+endif # APP_CUSTOM_OPTION
+
+endmenu
